@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta tags for Open Graph Protocol -->
+    <meta property="og:title" content="InfiniKisser">
+    <meta property="og:description" content="A Wall of Boykisser Gifs">
+    <meta property="og:image" content="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fimages-wixmp-ed30a86b8c4ca887773594c2.wixmp.com%2Ff%2F216bf209-6112-48d1-a017-56e99bf4a2aa%2Fdfw38to-36a427f9-3076-4f21-9fa0-27324bb7ebd9.png%3Ftoken%3DeyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzIxNmJmMjA5LTYxMTItNDhkMS1hMDE3LTU2ZTk5YmY0YTJhYVwvZGZ3Mzh0by0zNmE0MjdmOS0zMDc2LTRmMjEtOWZhMC0yNzMyNGJiN2ViZDkucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.ToIFezYHp8KgH2e53t397fautW1IcPp3uZAys-Ak1jw&f=1&nofb=1&ipt=6b56980a013775bad38fa19c419d41997be5fea7ad8dd01e3490e815e2fc2814&ipo=images">
+    <meta property="og:url" content="https://gmlblahaj.online/infinikisser.html">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>[InfiniKisser]</title>
+    <link rel="icon" href="guh.ico" type="image/x-icon">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #ffffff;
+            display: flex;
+            flex-wrap: wrap;
+            overflow-y: scroll;
+        }
+        .gif {
+            width: 100px;
+            height: 100px;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        const gifs = ['guh.gif', 'guh2.gif', 'guh3.gif', 'guh4.gif', 'guh5.gif', 'guh6.gif', 'guh7.gif', 'guh8.gif', 'guh9.gif', 'guh10.gif', 'guh11.gif', 'guh12.gif', 'guh13.gif', 'guh14.gif', 'guh15.gif'];
+        const numGifsInitial = 698;
+        const maxGifs = 200; 
+        const loadMoreThreshold = 300; 
+
+       
+        function createGif() {
+            const gif = document.createElement('img');
+            gif.src = gifs[Math.floor(Math.random() * gifs.length)];
+            gif.className = 'gif';
+            document.body.appendChild(gif);
+        }
+
+       
+        for (let i = 0; i < numGifsInitial; i++) {
+            createGif();
+        }
+
+        
+        window.addEventListener('scroll', () => {
+            if (document.documentElement.scrollHeight - window.scrollY - window.innerHeight < loadMoreThreshold) {
+                for (let i = 0; i < 20; i++) {
+                    createGif();
+                }
+
+                
+                const currentGifs = document.querySelectorAll('.gif');
+                if (currentGifs.length > maxGifs) {
+                    for (let i = 0; i < 20; i++) {
+                        currentGifs[i].remove();
+                    }
+                }
+            }
+        });
+    </script>
+</body>
+</html>
