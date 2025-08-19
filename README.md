@@ -1,3 +1,2 @@
-zero opimization. zero shits given, website thats literally just an infinite wall of 15 boykisser gifs
-
-dont expect anything goood
+Infinite wall of Boykisser Gifs (15 in total)
+Kinda shit so dont expect anything great
