@@ -1,6 +1,6 @@
 const gifContainer = document.getElementById('gif-container');
 
-const gifs = ['guh.gif', 'guh2.gif', 'guh3.gif', 'guh4.gif', 'guh5.gif', 'guh6.gif', 'guh7.gif', 'guh8.gif', 'guh9.gif', 'guh10.gif', 'guh11.gif', 'guh12.gif', 'guh13.gif', 'guh14.gif', 'guh15.gif'];
+const gifs = ['assets/guh.gif', 'assets/guh10.gif', 'assets/guh11.gif', 'assets/guh12.gif', 'assets/guh13.gif', 'assets/guh14.gif', 'assets/guh15.gif', 'assets/guh2.gif', 'assets/guh3.gif', 'assets/guh4.gif', 'assets/guh5.gif', 'assets/guh6.gif', 'assets/guh7.gif', 'assets/guh8.gif', 'assets/guh9.gif'];
 const numGifsInitial = 200;
 const numGifsToAdd = 20;
 const maxGifs = 300;
